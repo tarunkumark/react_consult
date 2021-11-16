@@ -1,0 +1,19 @@
+#UserCard{
+    display:flex; 
+    flex-direction:row; 
+}
+#userdetails{
+    display:grid;
+
+}
+.text{
+    font-size: 15px;
+}
+.bold{
+    font-weight: bold;
+}
+.grey{
+    font-weight: lighter;
+    text-align: end;
+    padding-left : 2vw;
+}
