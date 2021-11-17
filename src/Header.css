@@ -1,7 +1,113 @@
 html{
     background-color: #f2f2f2;
 }
-.header{
+@media (max-width: 600px){
+  #header-desktop{ display: none};
+ .header :nth-child(5){ order:1;}
+ .header :nth-child(4){ order:3;}
+ .header :nth-child(3){ order:3;}
+ .header{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0.25vh;
+  background-color: #f2f2f2;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+#menubar{
+  
+  width: 40vw;
+  padding-top: 10px;
+  background-color: #b9e1ee;
+  position: absolute;
+  left: -115px;
+  top: 0px;
+  transition: 0.2s;
+  padding-bottom: 3vh;
+  color: #b9e1ee;
+}
+#menubar:hover{
+  left:0;
+  background-color: white;
+}
+#menubar a{
+  color: #00bfff;
+
+}
+#menubar a:hover{
+  color: #00bfff;
+  
+}
+#menubar a:active{
+  color: #00bfff;
+  
+}
+#menubar a:visited{
+  color: #00bfff;
+  
+}
+
+#basic{
+  display:none;
+}
+.button {
+  cursor: pointer;
+  background-color: #f2f2f2; /* Green */
+  color:#00bfff;
+  border:none;
+  height: 50px;
+  width: 50px;
+  border-radius:12px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+  
+}
+.button:hover{
+    background-color: lightblue;
+
+}
+input[type="search"]::placeholder { 
+  text-align: center;
+  overflow: visible;
+  line-height:normal ;
+}
+#searchbar{
+    border:1px;
+    border-radius: 10px;
+    width: 50vw;
+    height: 5vh;
+    box-shadow:  -1.5px -1.5px 2px #bfbfbf, 0.5px 0.5px 6px #ffffff;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    outline:none;
+    font-size:10px;
+    
+}
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+ .searchcontainer{
+  padding-top: 0vh;
+  padding-left: 5vw;
+}
+#switch1{
+  display:flex ;
+  flex-direction:row;
+}
+#advanced{
+    font-size:10px;
+    color:black;
+}
+}
+@media screen and (min-width: 600px){
+  #menubar{
+    display:none;
+  }
+  .header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,7 +154,7 @@ html{
   input:focus, textarea:focus, select:focus{
     outline: none;
 }
-  #searchcontainer{
+  .searchcontainer{
       padding-left: 35vw;
   }
   #switch1{
@@ -61,3 +167,4 @@ html{
   #advanced{
       color:#686868;
   }
+}
